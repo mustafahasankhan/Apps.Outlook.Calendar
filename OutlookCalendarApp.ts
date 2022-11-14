@@ -52,11 +52,10 @@ export class OutlookCalendarApp extends App {
 
         const text =
         `The authentication process has succeeded! :tada:\n` +
-        `If you are a workspace admin, retrieve it using ` +
+        `You may now retrieve your events using the ` +
         `\`/outlook-calendar-app get-events\` slash command and ` +
-        `save it for managing its members and tasks.\n` +
-        `If you are just a member of a workspace, you will be notified` +
-        `once your admin assigns you a task.`;
+        `you may subscribe to notifications for daily events using the.\n` +
+        `\`/outlook-calendar-app subscribe\` slash command.`;
 
 
         const blocks = await createSectionBlock(modify, text);

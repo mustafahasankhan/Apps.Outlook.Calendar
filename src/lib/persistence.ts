@@ -17,12 +17,3 @@ export const clearUIData = async (persistence: IPersistence, id: string): Promis
     await persistence.removeByAssociation(association);
 };
 
-export  const persist_workspace = async (read: IRead, persistence: IPersistence,user:string,workspace: string, members: string[]): Promise<void> =>{
-    const [wid,wname] = workspace.split(":");
-    const user_association = new RocketChatAssociationRecord(RocketChatAssociationModel.USER, user);
-    const workspacesofuser = new RocketChatAssociationRecord(RocketChatAssociationModel.MISC, 'saved_workspaces');
-    const workspacedata = new RocketChatAssociationRecord(RocketChatAssociationModel.MISC, `workspace:${wid}`);
-
-    await persistence.updateByAssociations([user_association, workspacesofuser], { workspacename:wname, workspaceid:wid, members:members }, true);
-
-}
