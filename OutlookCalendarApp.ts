@@ -53,7 +53,7 @@ export class OutlookCalendarApp extends App {
         const text =
         `The authentication process has succeeded! :tada:\n` +
         `If you are a workspace admin, retrieve it using ` +
-        `\`/outlook-calendar-app get-workspaces\` slash command and ` +
+        `\`/outlook-calendar-app get-events\` slash command and ` +
         `save it for managing its members and tasks.\n` +
         `If you are just a member of a workspace, you will be notified` +
         `once your admin assigns you a task.`;
