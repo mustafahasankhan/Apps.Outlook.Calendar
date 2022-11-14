@@ -1,0 +1,16 @@
+{
+    "id": "70b9929c-fcdb-4c25-a72a-c4602fa81bd8",
+    "version": "0.0.1",
+    "requiredApiVersion": "^1.19.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Mustafa Hasan Khan",
+        "homepage": "https://github.com/mustafahasankhan",
+        "support": "https://mustafahasankhan.com"
+    },
+    "name": "Outlook Calendar",
+    "nameSlug": "outlook-calendar",
+    "classFile": "OutlookCalendarApp.ts",
+    "description": "Sync your Outlook calendar with Rocket.Chat and manage your events efficiently.",
+    "implements": []
+}
